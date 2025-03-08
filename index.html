@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клан K2</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Добро пожаловать в клан K2</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" data-section="about">О клане</a></li>
+                <li><a href="#forum" data-section="forum">Форум</a></li>
+                <li><a href="#polls" data-section="polls">Опросы</a></li>
+                <li><a href="#contact" data-section="contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="active">
+
+            <h2>О клане</h2>
+            <p>Наш клан создан для объединения игроков Rust, стремящихся к командной игре, захвату территорий и развитию
+                сообщества.</p>
+            <p>Мы придерживаемся принципов честной игры, поддержки союзников и уважения к соперникам.</p>
+            <p><strong>Хотите вступить?</strong> Свяжитесь с нами в разделе <a href="#contact"
+                    data-section="contact">Контакты</a>!</p>
+        </section>
+        <section id="forum">
+            <h2>Форум</h2>
+            <p>Обсуждайте тактики, делитесь стратегиями и участвуйте в обсуждениях на нашем игровом форуме.</p>
+            <p>Здесь можно найти полезные советы, новости о событиях и внутриигровые объявления.</p>
+
+            <form id="forum-form" action="process_form.php" method="POST">
+                <form id="forum-form" action="/process_form" method="POST">
+                    <div>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Отправить сообщение</button>
+                </form>
+        </section>
+        <section id="forum">
+            <h2>Форум</h2>
+            <p>Обсуждайте тактики, делитесь стратегиями и участвуйте в обсуждениях на нашем игровом форуме.</p>
+            <p>Здесь можно найти полезные советы, новости о событиях и внутриигровые объявления.</p>
+            <p><a href="#">Перейти к обсуждениям</a></p>
+        </section>
+        <section id="polls">
+            <h2>Опросы</h2>
+            <p>Ваше мнение важно! Голосуйте за развитие клана, выбирайте лидеров и принимайте участие в решении ключевых
+                вопросов.</p>
+            <button onclick="vote()">Проголосовать</button>
+            <p id="vote-message" style="display: none; color: green; font-weight: bold;">Спасибо за ваш голос!</p>
+        </section>
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Присоединяйтесь к нашему <a href="#">Discord-серверу</a> для общения и координации действий.</p>
+            <p>Свяжитесь с лидерами клана через <a href="#">соцсети</a> или внутриигровые сообщения.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Клан Rust. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
